@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>コミュ読み君 使い方</title>
+<style>
+  :root { --accent: #e0457b; --fg: #222; --sub: #666; --bg: #fff; --line: #ececec; --soft: #fdf1f5; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.8 "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif; color: var(--fg); background: var(--bg); }
+  header { background: var(--accent); color: #fff; padding: 18px 16px; }
+  header .in, main, footer .in { max-width: 820px; margin: 0 auto; }
+  header a { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; }
+  header nav { margin-top: 4px; font-size: 14px; }
+  header nav a { font-size: 14px; font-weight: 400; margin-right: 16px; text-decoration: underline; }
+  main { padding: 8px 16px 48px; }
+  h1 { font-size: 26px; margin: 28px 0 8px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; padding-bottom: 4px; border-bottom: 2px solid var(--soft); }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  a { color: #c2185b; word-break: break-all; }
+  code { background: #f4f4f4; padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .table { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { background: var(--soft); white-space: nowrap; }
+  li { margin: 2px 0; }
+  footer { border-top: 1px solid var(--line); color: var(--sub); font-size: 13px; padding: 16px; }
+</style>
+</head>
+<body>
+<header><div class="in"><a href="./">コミュ読み君</a><nav><a href="./">使い方</a><a href="./privacy.html">プライバシーポリシー</a></nav></div></header>
+<main>
+<h1>コミュ読み君 使い方</h1>
+<p>シャニマスのコミュで、ボイスのない台詞（プロデューサーやスタッフなど）を読み上げて、読み終わったら次の台詞へ自動で進める Chrome の拡張機能です。非公式のファンメイドツールです。</p>
+<h2>1. はじめに用意するもの</h2>
+<ul><li><strong>パソコンの Google Chrome</strong>（Windows で確かめています。Mac はまだ確かめていません）</li><li><strong>VOICEVOX</strong>（無料の読み上げソフト）<ol><li><a href="https://voicevox.hiroshiba.jp/">https://voicevox.hiroshiba.jp/</a> からダウンロードしてインストールします</li><li>一度起動して、利用規約に同意しておきます</li></ol></li></ul>
+<h2>2. 拡張機能を入れる</h2>
+<ol><li>Chrome で Chrome ウェブストアのコミュ読み君のページ（リンクは準備中です） を開きます</li><li>「Chrome に追加」を押します</li><li>ツールバーのパズルのマークから「コミュ読み君」をピン留めしておくと、すぐ開けて便利です</li></ol>
+<p>入れる時に「shinycolors.enza.fun」と「127.0.0.1」のデータへのアクセスを求められます。ゲームの画面で台詞を読むためと、同じパソコンの VOICEVOX に読み上げを頼むためです。ゲームのサーバーや外のサーバーには何も送りません。</p>
+<h2>3. 使う</h2>
+<ol><li><strong>VOICEVOX を起動</strong>しておきます（開いておくだけで大丈夫です）</li><li>Chrome でシャニマスを開いて、コミュを再生します</li><li>ボイスのない台詞が読み上げられ、ボイスと読み上げが終わると次の台詞へ自動で進みます</li><li>選択肢では止まって、声でお知らせします。選択肢は自分で選んでください</li></ol>
+<p>拡張機能のアイコンに「ON」と出ている間は動いています。「OFF」は一時停止中です。VOICEVOX を閉じると止まり、いつものゲームのままになります。</p>
+<h3>自分で操作してもかまいません</h3>
+<ul><li>台詞をタップして自分で進める、ログを開く、早送り・SKIP する、などをしても、拡張機能は待ってから続きを進めます</li><li>ログを開いている間は止まり、閉じると続きから読み上げます</li></ul>
+<h3>別の窓で作業しながら</h3>
+<p>ゲームは本来、別の窓を触ると音が止まりますが、コミュを流している間は止めずに進めます。ゲームの画面が少しでも見えていれば、ほかの窓を操作していても止まりません。</p>
+<p>Chrome を最小化した時、別のタブに切り替えた時、Chrome の窓がほかの窓で完全に隠れた時は、一時停止します。ゲームの画面に戻ると、自動で続きから再開します。</p>
+<h3>コミュ並列閲覧</h3>
+<p>ゲームの「コミュ並列閲覧」でも使えます。サブ画面のコミュだけを読み上げて進め、その間メイン画面の音は消します。メイン画面のコミュは読み上げません。</p>
+<h2>4. ポップアップ（拡張機能のアイコンを押すと出る画面）</h2>
+<div class="table"><table><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>エンジン起動中／未起動</td><td>VOICEVOX が動いているか</td></tr><tr><td>状態</td><td>動作中・コミュ待ち・選択肢を選んでください・一時停止中 など</td></tr><tr><td>一時停止／再開</td><td>一時停止すると、読み上げと自動で進めるのを止めます（自分で台詞を進めて読めます）</td></tr><tr><td>有効</td><td>外すと拡張機能が止まります</td></tr><tr><td>読み上げの速さ・音量</td><td>読み上げの声の速さと大きさ</td></tr><tr><td>行と行の間</td><td>台詞が終わってから次へ進むまでの間</td></tr><tr><td>改行の間</td><td>台詞の中で改行がある時に入れる間</td></tr><tr><td>全文をすぐ表示</td><td>次の台詞に進んだ時、文字を一度に全部出します</td></tr><tr><td>選択肢を声で知らせる</td><td>選択肢で止まった時に声でお知らせします</td></tr><tr><td>声の設定</td><td>区分（プロデューサー・男性・女性・子ども など）ごとの声を、試聴して選べます。話者ごとに区分を直すこともできます</td></tr></tbody></table></div>
+<p>一時停止／再開は <strong>Ctrl+Shift+1</strong> でもできます（Chrome の外を操作中でも効きます）。他のアプリと同じキーで効かない時は、<code>chrome://extensions/shortcuts</code> で変えられます。</p>
+<h2>5. 困った時</h2>
+<div class="table"><table><thead><tr><th>こんな時</th><th>ためしてほしいこと</th></tr></thead><tbody><tr><td>読み上げない・進まない</td><td>VOICEVOX が起動しているか、ポップアップの「エンジン起動中」と「有効」を見てください</td></tr><tr><td>「一時停止中」で止まった（ポップアップに「次の行が始まりません」など）</td><td>ポップアップの「再開」か Ctrl+Shift+1 を押してください。台詞が進んでいなければ、ゲームの台詞を1回タップしてから再開してください。次のコミュを再生した時は自動で動き出します</td></tr><tr><td>「ゲームの画面が隠れたので一時停止中」と出た</td><td>最小化・別のタブ・ほかの窓で完全に隠れた時の一時停止です。ゲームの画面に戻ると自動で再開します</td></tr><tr><td>「今の行が分かりません」と出た</td><td>ゲームの台詞をタップして次の台詞へ進めると、そこから追います</td></tr><tr><td>コミュの最初の台詞だけ読み上げが遅れる</td><td>読み上げの準備中です（そのまま待てば読み上げます）</td></tr><tr><td>声が合っていない（女性なのに男性の声など）</td><td>「声の設定」の「これまでに出た話者」で区分を直せます</td></tr><tr><td>ショートカットが効かない</td><td>他のアプリが同じキーを使っているかもしれません。<code>chrome://extensions/shortcuts</code> で変えてください</td></tr></tbody></table></div>
+<h2>6. ご注意</h2>
+<ul><li>本拡張機能が扱う情報については、プライバシーポリシー（<a href="https://nakamimien.github.io/komyu-yomikun/privacy.html">https://nakamimien.github.io/komyu-yomikun/privacy.html</a>）をご覧ください</li><li>非公式のツールです。株式会社バンダイナムコエンターテインメント様、VOICEVOX とは関係ありません。ご利用は自己責任でお願いします</li><li>読み上げの声を配信や動画で使う時は、VOICEVOX と各キャラクターの利用規約に従い、「VOICEVOX:キャラクター名」のクレジットを入れてください</li><li>はじめの設定で使っている声：VOICEVOX:玄野武宏、青山龍星、ちび式じい、白上虎太郎、冥鳴ひまり、春日部つむぎ、満別花丸</li></ul>
+<h2>7. 不具合・感想を送る時</h2>
+<p>こちらのフォームからお願いします：<a href="https://docs.google.com/forms/d/e/1FAIpQLSfQ7yBI4eH-l854eH1OT0nfjOCmyLGELIg15evPpiyyytgY1Q/viewform">https://docs.google.com/forms/d/e/1FAIpQLSfQ7yBI4eH-l854eH1OT0nfjOCmyLGELIg15evPpiyyytgY1Q/viewform</a></p>
+<p>不具合の時は、次のことを書いてもらえると直しやすいです。</p>
+<ul><li>どのコミュか（アイドル名・コミュの名前）</li><li>何が起きたか（止まった・読み間違えた・同じ台詞を2回読んだ など）と、その少し前に自分がした操作（タップ・ログ・早送り など）</li><li>コミュ並列閲覧を使っていたか</li><li>止まった時のポップアップの表示（スクリーンショットがあると助かります）</li></ul>
+</main>
+<footer><div class="in">コミュ読み君は非公式のファンメイドツールです。株式会社バンダイナムコエンターテインメント様、VOICEVOX とは関係ありません。</div></footer>
+</body>
+</html>
